@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List WEBSITE|| Tanvir</title>
+</head>
+<body>
+    <header class="text-center mt-4"><a href="/"><img class="logo" src="/images/things-todo-logo.svg" alt="" srcset=""></a>
+    </header>
+    <div class="container pt-5">
+        <h2 class="text-center" id="heading"></h2>
+        <h5 class="text-center mb-5">Make Your Plan And Add Some Todos Now!</h5>
+        <!-- Input Field  -->
+        <div class="input-group mb-3 pt-4" id="todo-form">
+            <input type="text" class="form-control rounded-0 bg-transparent" id="input-field" placeholder="✍️ Add list here...">
+            <buton class="input-group-text" id="add-button" onclick="addItem()">+</buton>
+        </div>
+     <!-- Table  -->
+    <table class="table mt-5 table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">Todo Items</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+            
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal show fade" id="alert-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        style="z-index:-1;transition:.5s ease;opacity:0;">
+        <div class="modal-dialog">
+            <div class="modal-content" id="modal-content"
+                style="opacity:0;transform:translateY(-40px) ;transition:.4s ease;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alertModalLabel">Empty List 🤷‍♂️</h5>
+                    <button type="button" class="btn-close" id="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Please add your todo first! It is super easy and fun 😀
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
